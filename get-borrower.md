@@ -1,8 +1,8 @@
-# Initial page
+# Get Borrower
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+{% api-method method="get" host="https://api.cakes.com" path="/v1/borrower/:id" %}
 {% api-method-summary %}
-Get Cakes
+Get Borrower
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -40,7 +40,7 @@ Whether the cake should be gluten-free or not.
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```csharp
+```
 {    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
 ```
 {% endapi-method-response-example %}
@@ -57,20 +57,6 @@ Could not find a cake matching this query.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-{% tabs %}
-{% tab title="Java" %}
-```text
-public static vpid main
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```text
-print(hello world)
-```
-{% endtab %}
-{% endtabs %}
 
 
 
