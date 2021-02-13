@@ -1,5 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
-* [Get Borrower](get-borrower.md)
-
+* [Overview](README.md)
+* Borrowers
+  * [Get Borrower](get-borrower.md)

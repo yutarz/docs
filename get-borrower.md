@@ -1,47 +1,23 @@
 # Get Borrower
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/borrower/:id" %}
+{% api-method method="get" host="https://api.yutars.com/borrower/" path="/v1/borrower/:id" %}
 {% api-method-summary %}
 Get Borrower
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+This resource allows you to get a Borrower's financial (credit) record  for the past 6 Months.
+
+  {% api-method-parameter name="id" type="string" %}
+  ###### Could be any of the below;
+  - IPPIS - For public sector borrowers, GOvernment salary workers.
+  - NIN - National Identity Number
+  - BVN - Bank verification Number
+  {% endapi-method-parameter %}
+
 {% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
-```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+```js
+{ "id": "237584dhd8s" }
 ```
 {% endapi-method-response-example %}
 
@@ -50,7 +26,7 @@ Cake successfully retrieved.
 Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
-```
+```js
 {    "message": "Ain't no cake like that."}
 ```
 {% endapi-method-response-example %}
