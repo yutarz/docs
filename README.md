@@ -4,4 +4,4 @@ Yutars enables lenders get insights into borrowers exposures across different fi
 #### Get started
   - You need a valid user account with an API key. signup for one here [Get Access key](https://api.yutars.com/signup)
   - Use our sandbox environment for testing and development purposes **You don't need an API key here** [Sandbox Environment](https://sandbox.yutars.com)
-  - Begin makin => [Documentation](https://docs.yutars.com/api)
+  - Begin making => [Documentation](https://docs.yutars.com/api)
